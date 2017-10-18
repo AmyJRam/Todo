@@ -19,13 +19,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         // Inflate layout using setContentView Method
         setContentView(R.layout.activity_main);
+        //Calling initObjects and initCallBack method
         initObjects();
-        initCallBacks();
+        initCallBack();
 
     }
 
     /*
-    In this method initialized all the editText objects
+    In this method  editText objects and button object are initialized
      */
     public void initObjects() {
         /*
@@ -38,9 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     /*
-    In this method registered event callbacks
+    In this method event callbacks are registered
      */
-    public void initCallBacks() {
+    public void initCallBack() {
         saveTodoButton.setOnClickListener(this);
     }
 
